@@ -1,0 +1,87 @@
+############################
+# OS / Editor
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+.vscode/
+.idea/
+
+############################
+# ENV / Secrets
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Python (FastAPI)
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+venv/
+.venv/
+env/
+ENV/
+
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# SQLite / DB
+*.db
+*.sqlite3
+
+############################
+# Node / Vite / React
+############################
+node_modules/
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# npm / yarn / pnpm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################
+# Frontend environment
+############################
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+############################
+# Backend environment
+############################
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+############################
+# Logs
+############################
+logs/
+*.log
+
+############################
+# Docker (if added later)
+############################
+docker-compose.override.yml
+*.pid
