@@ -1,0 +1,35 @@
+.public-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 1.2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.public-nav .logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.public-nav .nav-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.public-nav button {
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.public-nav .primary {
+  background: #6d28d9;
+  color: white;
+}

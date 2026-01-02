@@ -1,0 +1,74 @@
+.top-navbar {
+  height: 64px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #ececf3;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  color: #6d5dfc;
+}
+
+nav span {
+  margin-right: 18px;
+  color: #5f5f76;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+nav .active {
+  color: #6d5dfc;
+  font-weight: 500;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center input {
+  width: 420px;
+  padding: 9px 14px;
+  background: #f3f3f8;
+  border: 1px solid #e2e2ee;
+  border-radius: 8px;
+  color: #1f1f2b;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-btn {
+  background: #6d5dfc;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #ececff;
+  color: #6d5dfc;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}

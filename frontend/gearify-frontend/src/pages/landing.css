@@ -1,0 +1,117 @@
+/* Root */
+.landing-root {
+  min-height: 110vh;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.329),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url("../assets/landing-bg.png");
+  background-size: cover;
+  background-position: center;
+  color: #0f172a;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+
+/* Navbar */
+.landing-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.nav-btn.primary {
+  background: #6d28d9;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  max-width: 900px;
+  margin: 5rem auto 0;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  background: #f3e8ff;
+  color: #6d28d9;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.hero h1 span {
+  color: #6d28d9;
+}
+
+.hero p {
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero buttons */
+.hero-actions {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta {
+  padding: 0.75rem 1.8rem;
+  border-radius: 10px;
+  border: none;
+  background: #6d28d9;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.ghost {
+  padding: 0.75rem 1.8rem;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
