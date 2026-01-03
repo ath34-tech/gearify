@@ -44,3 +44,10 @@ tr:hover {
   background: #ececff;
   color: #6d5dfc;
 }
+.clickable-row {
+  cursor: pointer;
+}
+
+.clickable-row:hover {
+  background-color: rgba(98, 62, 255, 0.08);
+}

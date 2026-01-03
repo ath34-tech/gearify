@@ -9,7 +9,8 @@ import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Onboarding from "./pages/onboarding/Onboarding";
 import Dashboard from "./pages/dashboard/Dashboard";
-
+import NewRequest from "./pages/maintenance/NewRequest";
+import MaintenanceDetail from "./pages/maintenance/MaintenanceDetail";
 export default function App() {
   return (
     <AuthProvider>
@@ -54,6 +55,25 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        {/* ✅ ADD THIS */}
+        <Route
+          path="/maintenance/new"
+          element={
+            <ProtectedRoute>
+              <NewRequest />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+  path="/maintenance/:id"
+  element={
+    <ProtectedRoute>
+      <MaintenanceDetail />
+    </ProtectedRoute>
+  }
+/>
+
       </Routes>
     </AuthProvider>
   );

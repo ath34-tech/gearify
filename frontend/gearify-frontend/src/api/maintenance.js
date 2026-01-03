@@ -12,7 +12,7 @@ export async function fetchDashboardRequests() {
       due_date,
       created_at,
       requested_by:users!maintenance_requests_requested_by_fkey(email),
-      assigned_to:users!maintenance_requests_assigned_to_fkey(email),
+      assigned_to:technicians!maintenance_requests_assigned_to_fkey(name, email),
       company:companies(name)
     `)
     .order("created_at", { ascending: false })

@@ -7,7 +7,6 @@ export default function TopNavbar() {
         <span className="logo">Gearify</span>
         <nav>
           <span className="active">Dashboard</span>
-          <span>Maintenance</span>
           <span>Calendar</span>
           <span>Equipment</span>
           <span>Reporting</span>

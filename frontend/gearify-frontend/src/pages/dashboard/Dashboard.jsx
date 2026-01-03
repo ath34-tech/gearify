@@ -1,9 +1,10 @@
 import "./dashboard.css";
+import { useNavigate } from "react-router-dom";
 import TopNavbar from "../../components/dashboard/TopNavbar";
 import InsightCard from "../../components/dashboard/InsightCard";
 import MaintenanceTable from "../../components/dashboard/MaintenanceTable";
 import { DashboardProvider } from "../../context/DashboardContext";
-// ✅ ADD THESE
+
 import { EquipmentProvider, useEquipment } from "../../context/EquipmentContext";
 import { TeamsProvider, useTeams } from "../../context/TeamsContext";
 
@@ -41,18 +42,29 @@ function DashboardCards() {
 }
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+
   return (
     <DashboardProvider>
-      {/* ✅ ONLY ADD THESE TWO PROVIDERS */}
       <EquipmentProvider>
         <TeamsProvider>
           <div className="dashboard-root">
             <TopNavbar />
 
             <div className="dashboard-content">
+              {/* 🔥 HEADER WITH BUTTON */}
               <div className="dashboard-header">
-                <h1>Dashboard</h1>
-                <p>Overview of maintenance activity</p>
+                <div>
+                  <h1>Dashboard</h1>
+                  <p>Overview of maintenance activity</p>
+                </div>
+
+                <button
+                  className="primary-btn"
+                  onClick={() => navigate("/maintenance/new")}
+                >
+                  + New Request
+                </button>
               </div>
 
               <DashboardCards />

@@ -1,8 +1,10 @@
 import { useDashboard } from "../../context/DashboardContext";
 import "./table.css";
+import { useNavigate } from "react-router-dom";
 
 export default function MaintenanceTable() {
   const { requests, loading } = useDashboard();
+  const navigate = useNavigate();
 
   if (loading) {
     return <div className="table-card">Loading...</div>;
@@ -29,10 +31,13 @@ export default function MaintenanceTable() {
 
           <tbody>
             {requests.map((req) => (
-              <tr key={req.id}>
-                <td>{req.subject}</td>
+              <tr
+                key={req.id}
+                onClick={() => navigate(`/maintenance/${req.id}`)}
+                className="clickable-row"
+              >                <td>{req.subject}</td>
                 <td>{req.requested_by?.email || "—"}</td>
-                <td>{req.assigned_to?.email || "Unassigned"}</td>
+                <td>{req.assigned_to?.name || "Unassigned"}</td>
                 <td>{req.category}</td>
                 <td>
                   <span className={`badge ${req.status}`}>
